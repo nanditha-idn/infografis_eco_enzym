@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografis Eco-Enzyme Bali (SDGs 12)</title>
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Konfigurasi Tailwind untuk warna dan font Inter -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+        /* Palet Warna Lebih Kalem */
+        .sdg-12-color {
+            background-color: #c89f36; /* Muted Gold/Brown - SDGs 12 */
+        }
+        .organic-color {
+            color: #6d9b76; /* Sage Green - Organik */
+        }
+        .organic-bg {
+            background-color: #f5fff7; /* Very Soft Green-White */
+        }
+        .shadow-custom {
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+        }
+        /* Style untuk Pie Chart */
+        .pie-chart {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-image: conic-gradient(
+                #6d9b76 0% 65%,
+                #d1d5db 65% 100%
+            );
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 bg-gray-50">
+
+    <div class="max-w-6xl mx-auto rounded-xl shadow-2xl overflow-hidden bg-white">
+        
+        <!-- HEADER & JUDUL UTAMA -->
+        <header class="p-6 md:p-10 text-white sdg-12-color">
+            <div class="flex items-center space-x-4">
+                <!-- Ikon SDGs 12 - Representasi Logo Sederhana -->
+                <svg class="w-12 h-12 md:w-16 md:h-16 text-white" fill="currentColor" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Lingkaran Luar (Warna SDGs 12) -->
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+                    <!-- Ikon Panah Siklus -->
+                    <path d="M50 20 L65 35 L55 35 A 15 15 0 0 1 55 65 L65 65 L50 80 L35 65 L45 65 A 15 15 0 0 1 45 35 L35 35 Z" fill="#FFFFFF"/>
+                </svg>
+                <div>
+                    <h1 class="text-2xl md:text-4xl font-extrabold leading-tight">ECO-ENZYME: SOLUSI PENGOLAHAN SAMPAH ORGANIK BERBASIS SUMBER</h1>
+                    <p class="text-sm md:text-lg mt-1 font-medium">Mendorong SDGs 12: Konsumsi dan Produksi yang Bertanggung Jawab di Bali</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- BAGIAN 1: KRISIS SAMPAH ORGANIK BALI -->
+        <section class="p-6 md:p-10">
+            <h2 class="text-xl md:text-3xl font-bold mb-6 text-gray-800 border-b-2 pb-2 organic-color">1. KRISIS SAMPAH ORGANIK BALI (Tantangan Data)</h2>
+            
+            <!-- RINGKASAN DATA GLOBAL + PIE CHART -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8 text-center">
+                
+                <!-- KOLOM PIE CHART -->
+                <div class="p-4 rounded-lg organic-bg shadow-custom flex flex-col items-center justify-center">
+                    <p class="text-sm font-semibold text-gray-600 mb-2">Porsi Sampah Organik</p>
+                    <div class="pie-chart mb-2"></div>
+                    <p class="text-lg font-bold text-gray-700 mt-1">65% Organik | 35% Lainnya</p>
+                </div>
+
+                <!-- DATA 1: HARIAN -->
+                <div class="p-4 rounded-lg organic-bg shadow-custom">
+                    <p class="text-sm font-semibold text-gray-600">Timbulan Harian Total (2024)</p>
+                    <p class="text-3xl md:text-4xl font-extrabold organic-color mt-1">3.436</p>
+                    <p class="text-lg text-gray-700">Ton/Hari</p>
+                </div>
+                <!-- DATA 2: TAHUNAN -->
+                <div class="p-4 rounded-lg organic-bg shadow-custom">
+                    <p class="text-sm font-semibold text-gray-600">Timbulan Tahunan Total</p>
+                    <p class="text-3xl md:text-4xl font-extrabold organic-color mt-1">1,25 Juta</p>
+                    <p class="text-lg text-gray-700">Ton/Tahun</p>
+                </div>
+                 <!-- DATA 3: FAKTA KUNCI (Dampak Utama) -->
+                <div class="p-4 rounded-lg organic-bg shadow-custom">
+                    <p class="text-sm font-semibold text-gray-600">Dampak Utama</p>
+                    <p class="text-2xl md:text-3xl font-extrabold text-red-600 mt-2">Gas CH<span class="align-sub text-lg">4</span></p>
+                    <p class="text-sm text-gray-700">25x Lebih Berbahaya dari CO<span class="align-sub text-xs">2</span></p>
+                </div>
+            </div>
+
+            <!-- FAKTA KUNCI NARASI (Perbaikan sintaks) -->
+            <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-500 mb-8">
+                <p class="font-semibold text-red-700">Fakta Kunci:</p>
+                <p class="text-gray-700">Sampah organik jika ditimbun menghasilkan GAS METANA (CH<span class="align-sub text-sm">4</span>) yang <span class="font-bold">25</span> kali lebih berbahaya daripada CO<span class="align-sub text-sm">2</span> bagi iklim global. Ini mengancam citra dan lingkungan Bali.</p>
+            </div>
+
+            <!-- RINCIAN TIMBULAN PER DAERAH (VISUALISASI 1 ACUAN - BAR CHART) -->
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Rincian Timbulan Tahunan Per Daerah (2024)</h3>
+            
+            <!-- BAR CHART VISUALIZATION (Top 3) -->
+            <div class="bg-gray-50 p-4 rounded-lg shadow-inner mb-6">
+                <p class="text-sm font-bold mb-3 text-gray-600">3 Penyumbang Sampah Terbesar (Ribuan Ton)</p>
+                
+                <!-- Bar 1: Denpasar (366.8k = 100%) -->
+                <div class="mb-4">
+                    <div class="flex justify-between text-xs font-medium text-gray-700">
+                        <span>Kota Denpasar</span>
+                        <span>366.806 Ton</span>
+                    </div>
+                    <div class="h-4 bg-gray-200 rounded-full mt-1">
+                        <div class="h-4 bg-red-400 rounded-full" style="width: 100%;"></div>
+                    </div>
+                </div>
+
+                <!-- Bar 2: Gianyar (205.1k = 56%) -->
+                <div class="mb-4">
+                    <div class="flex justify-between text-xs font-medium text-gray-700">
+                        <span>Kabupaten Gianyar</span>
+                        <span>205.129 Ton</span>
+                    </div>
+                    <div class="h-4 bg-gray-200 rounded-full mt-1">
+                        <div class="h-4 bg-yellow-400 rounded-full" style="width: 56%;"></div>
+                    </div>
+                </div>
+
+                <!-- Bar 3: Badung (199.8k = 54.5%) -->
+                <div class="mb-4">
+                    <div class="flex justify-between text-xs font-medium text-gray-700">
+                        <span>Kabupaten Badung</span>
+                        <span>199.810 Ton</span>
+                    </div>
+                    <div class="h-4 bg-gray-200 rounded-full mt-1">
+                        <div class="h-4 bg-blue-400 rounded-full" style="width: 54.5%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TABLE (Complete Data) -->
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                    <thead>
+                        <tr class="bg-gray-100 text-left text-xs font-semibold uppercase tracking-wider text-gray-600">
+                            <th class="p-3 border-b-2">Kabupaten/Kota</th>
+                            <th class="p-3 border-b-2 text-right">Timbulan Tahunan (Ton)</th>
+                            <th class="p-3 border-b-2 text-right">Persentase (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-yellow-50/50 font-bold bg-yellow-50">
+                            <td class="p-3 border-b">Kota Denpasar</td>
+                            <td class="p-3 border-b text-right">366.806,75</td>
+                            <td class="p-3 border-b text-right">29,25%</td>
+                        </tr>
+                        <tr class="hover:bg-green-50/50">
+                            <td class="p-3 border-b">Kabupaten Gianyar</td>
+                            <td class="p-3 border-b text-right">205.129,64</td>
+                            <td class="p-3 border-b text-right">16,35%</td>
+                        </tr>
+                        <tr class="hover:bg-green-50/50">
+                            <td class="p-3 border-b">Kabupaten Badung</td>
+                            <td class="p-3 border-b text-right">199.810,15</td>
+                            <td class="p-3 border-b text-right">15,93%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50/50">
+                            <td class="p-3 border-b">Kabupaten Buleleng</td>
+                            <td class="p-3 border-b text-right">150.779,68</td>
+                            <td class="p-3 border-b text-right">12,02%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50/50">
+                            <td class="p-3 border-b">Kabupaten Karangasem</td>
+                            <td class="p-3 border-b text-right">102.643,48</td>
+                            <td class="p-3 border-b text-right">8,18%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50/50">
+                            <td class="p-3 border-b">Kabupaten Tabanan</td>
+                            <td class="p-3 border-b text-right">86.571,07</td>
+                            <td class="p-3 border-b text-right">6,90%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50/50">
+                            <td class="p-3 border-b">Kabupaten Jembrana</td>
+                            <td class="p-3 border-b text-right">60.106,92</td>
+                            <td class="p-3 border-b text-right">4,79%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50/50">
+                            <td class="p-3 border-b">Kabupaten Bangli</td>
+                            <td class="p-3 border-b text-right">41.557,88</td>
+                            <td class="p-3 border-b text-right">3,31%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50/50">
+                            <td class="p-3 border-b">Kabupaten Klungkung</td>
+                            <td class="p-3 border-b text-right">40.829,45</td>
+                            <td class="p-3 border-b text-right">3,26%</td>
+                        </tr>
+                        <tr class="bg-gray-200 font-extrabold">
+                            <td class="p-3">TOTAL PROVINSI BALI</td>
+                            <td class="p-3 text-right">1.254.235,02</td>
+                            <td class="p-3 text-right">100,00%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- BAGIAN 2: ECO-ENZYME: SOLUSI DARI DAPUR -->
+        <section class="p-6 md:p-10 sdg-12-color text-white">
+            <h2 class="text-xl md:text-3xl font-bold mb-6 border-b-2 pb-2">2. ECO-ENZYME: SOLUSI BERBASIS SUMBER DARI DAPUR</h2>
+            
+            <p class="text-lg mb-4 font-light">Eco-Enzyme adalah solusi implementasi SDGs 12 yang paling sederhana. Ia mengubah sisa KONSUMSI rumah tangga menjadi produk PRODUKSI baru yang bermanfaat.</p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-center">FORMULA UTAMA (RASIO 1 : 3 : 10)</h3>
+            
+            <div class="grid grid-cols-3 gap-4 text-center">
+                <!-- RASIO 1: GULA -->
+                <div class="p-4 bg-yellow-900/30 rounded-lg shadow-md border-2 border-white">
+                    <p class="text-4xl font-extrabold">1</p>
+                    <p class="font-bold mt-2">BAGIAN GULA</p>
+                    <p class="text-sm font-light">(Molase/Gula Merah)</p>
+                </div>
+                <!-- RASIO 3: LIMBAH ORGANIK -->
+                <div class="p-4 bg-yellow-900/30 rounded-lg shadow-md border-2 border-white">
+                    <p class="text-4xl font-extrabold">3</p>
+                    <p class="font-bold mt-2">BAGIAN LIMBAH ORGANIK</p>
+                    <p class="text-sm font-light">(Kulit Buah/Sisa Sayur)</p>
+                </div>
+                <!-- RASIO 10: AIR -->
+                <div class="p-4 bg-yellow-900/30 rounded-lg shadow-md border-2 border-white">
+                    <p class="text-4xl font-extrabold">10</p>
+                    <p class="font-bold mt-2">BAGIAN AIR</p>
+                    <p class="text-sm font-light">(Air Bersih)</p>
+                </div>
+            </div>
+            
+            <!-- Proses -->
+            <div class="mt-6 text-center">
+                <p class="text-lg font-semibold mt-4">PROSES INTI: Fermentasi selama $\mathbf{90}$ hari ($\mathbf{3}$ Bulan)</p>
+                <p class="text-sm font-light">*(VISUALISASI 2: Diagram Proses $\rightarrow$ Input: Limbah $\rightarrow$ Proses: Botol Tertutup $\rightarrow$ Output: Eco-Enzyme)*</p>
+            </div>
+        </section>
+
+        <!-- BAGIAN 3: DAMPAK DAN MANFAAT -->
+        <section class="p-6 md:p-10">
+            <h2 class="text-xl md:text-3xl font-bold mb-6 text-gray-800 border-b-2 pb-2 organic-color">3. DAMPAK & MANFAAT (Aksi Nyata SDGs 12)</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- MANFAAT 1: PENGURANGAN LIMBAH -->
+                <div class="p-6 rounded-lg bg-green-50 shadow-custom border-t-4 border-green-500">
+                    <h3 class="text-2xl font-bold organic-color mb-3">1. Pengurangan Beban TPA</h3>
+                    <p class="text-gray-700">Setiap rumah tangga dapat mengurangi pembuangan sampah organik hingga 60%, langsung meringankan beban TPA yang overload.</p>
+                    <p class="mt-2 text-sm font-semibold text-green-600">Keterkaitan SDGs 12: Pengurangan Limbah.</p>
+                </div>
+
+                <!-- MANFAAT 2: PRODUKSI BERTANGGUNG JAWAB -->
+                <div class="p-6 rounded-lg bg-yellow-50 shadow-custom border-t-4 border-yellow-500">
+                    <h3 class="text-2xl font-bold text-yellow-700 mb-3">2. Alternatif Produk Kimia</h3>
+                    <p class="text-gray-700">Eco-Enzyme digunakan sebagai Pembersih Lantai, Pupuk Cair, Disinfektan, dan Pestisida alami.</p>
+                    <p class="mt-2 text-sm font-semibold text-yellow-600">Keterkaitan SDGs 12: Produksi Bertanggung Jawab (Mengurangi bahan kimia industri).</p>
+                </div>
+
+                <!-- MANFAAT 3: LINGKUNGAN & EKONOMI SIRKULAR -->
+                <div class="p-6 rounded-lg bg-blue-50 shadow-custom border-t-4 border-blue-500">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-3">3. Ekonomi & Iklim Sehat</h3>
+                    <p class="text-gray-700">Mengubah waste menjadi value. Mengurangi gas Metana, mendukung udara dan tanah yang bersih di Bali (Tri Hita Karana).</p>
+                    <p class="mt-2 text-sm font-semibold text-blue-600">Keterkaitan SDGs 12: Efisiensi Sumber Daya & SDGs 13: Aksi Iklim.</p>
+                </div>
+            </div>
+
+            <div class="mt-8 p-4 bg-gray-100 rounded-lg text-center">
+                <p class="text-lg font-bold text-gray-800">Dukungan Pemerintah:</p>
+                <p class="text-base text-gray-600">Gerakan ini sejalan dengan Pergub Bali No. 47 Tahun 2019 tentang Pengelolaan Sampah Berbasis Sumber, yang mewajibkan pengolahan sampah di hulu.</p>
+                <!-- VISUALISASI 3: Quote pendek dari tokoh lingkungan Bali -->
+            </div>
+        </section>
+
+        <!-- BAGIAN 4: AJAKAN BERTINDAK -->
+        <section class="p-6 md:p-10 bg-gray-800 text-white text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-yellow-300">KELOLA SAMPAH ANDA DI DAPUR, JAGA ALAM BALI!</h2>
+            <p class="text-xl mb-6 font-light">Jadilah bagian dari solusi, bukan bagian dari polusi.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="p-3 bg-yellow-700 rounded-lg font-semibold">1. MULAI PILAH: Sisihkan kulit buah dan sisa sayuran Anda.</div>
+                <div class="p-3 bg-yellow-700 rounded-lg font-semibold">2. FERMENTASI: Ikuti rasio 1:3:10 dan biarkan selama $\mathbf{90}$ hari.</div>
+                <div class="p-3 bg-yellow-700 rounded-lg font-semibold">3. NIKMATI: Gunakan cairan Eco-Enzyme sebagai solusi rumah tangga alami.</div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
